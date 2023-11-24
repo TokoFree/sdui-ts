@@ -1,0 +1,91 @@
+{
+  "templates": {
+    "lego": {
+      "type": "container",
+      "items": [
+        {
+          "type": "header",
+          "$text": "title"
+        }
+      ]
+    },
+    "header": {
+      "type": "text",
+      "font_size": 24,
+      "paddings": {
+        "top": 10,
+        "bottom": 10,
+        "left": 10,
+        "right": 10
+      },
+      "$text": "title"
+    },
+    "single_image": {
+      "type": "image",
+      "paddings": {
+        "$top": "padding_top",
+        "$bottom": "padding_bottom",
+        "$left": "padding_left",
+        "$right": "padding_right"
+      }
+    },
+    "four_lego": {
+      "type": "container",
+      "items": [
+        {
+          "type": "container",
+          "items": [
+            {
+              "type": "container",
+              "items": [
+                {
+                  "type": "single_image",
+                  "$image_url": "image_url_1"
+                },
+                {
+                  "type": "single_image",
+                  "$image_url": "image_url_2"
+                }
+              ],
+              "orientation": "horizontal"
+            },
+            {
+              "type": "container",
+              "items": [
+                {
+                  "type": "single_image",
+                  "$image_url": "image_url_3"
+                },
+                {
+                  "type": "single_image",
+                  "$image_url": "image_url_4"
+                }
+              ],
+              "orientation": "horizontal"
+            }
+          ],
+          "orientation": "vertical"
+        }
+      ]
+    }
+  },
+  "card": {
+    "log_id": "sample_card",
+    "states": [
+      {
+        "state_id": 0,
+        "div": {
+          "type": "four_lego",
+          "image_url_1": "https://habrastorage.org/r/w32/getpro/habr/avatars/fc3/f8c/b5f/fc3f8cb5ff62a37139359296fcb2626a.jpg",
+          "image_url_2": "https://habrastorage.org/r/w32/getpro/habr/avatars/fc3/f8c/b5f/fc3f8cb5ff62a37139359296fcb2626a.jpg",
+          "image_url_3": "https://habrastorage.org/r/w32/getpro/habr/avatars/fc3/f8c/b5f/fc3f8cb5ff62a37139359296fcb2626a.jpg",
+          "image_url_4": "https://habrastorage.org/r/w32/getpro/habr/avatars/fc3/f8c/b5f/fc3f8cb5ff62a37139359296fcb2626a.jpg",
+          "padding_right": 4,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 4
+        }
+      }
+    ]
+  }
+}

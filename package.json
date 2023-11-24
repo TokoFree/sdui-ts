@@ -1,0 +1,16 @@
+{
+  "name": "divkit-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc index.ts && node index.js > output/index.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@divkitframework/jsonbuilder": "^28.11.0"
+  }
+}

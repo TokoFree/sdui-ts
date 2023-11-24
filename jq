@@ -1,0 +1,1 @@
+{"templates":{"lego":{"type":"container","items":[{"type":"header","$text":"title"}]},"header":{"type":"text","font_size":24,"$text":"title"}},"card":{"log_id":"sample_card","states":[{"state_id":0,"div":{"type":"lego","title":"Some Title"}}]}}
